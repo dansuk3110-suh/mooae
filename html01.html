@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Redirect</title>
+</head>
+<body>
+  <video id="video" width="640" height="360" controls>
+    <source src="영상1 (1).mp4" type="video/mp4">
+    동영상을 지원하지 않는 브라우저입니다.
+  </video>
+
+  <script>
+    const video = document.getElementById('video');
+    video.addEventListener('ended', () => {
+      // 동영상이 끝난 후 이동할 URL
+      window.location.href = "https://cafe.daum.net/kb5118/NbQl/660";
+    });
+  </script>
+</body>
+</html>
